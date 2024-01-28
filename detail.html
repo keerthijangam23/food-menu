@@ -19,8 +19,12 @@
         //will return the id value of the "id" parameter in the URL.
         const productId = urlParams.get('id');
 
-
+        //find the product with the matching id from the products data.
+        const selectedProduct = products.data.find((product) => product.id == productId);
         
+
+
+
       });
     </script>
     <script src="index.js"></script>
