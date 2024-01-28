@@ -17,40 +17,47 @@
         // URLSearchParams -->It takes the query string (in this case, window.location.search) as an argument and parses it, allowing us to easily manipulate and retrieve individual parameters.
         const urlParams = new URLSearchParams(window.location.search);
         //will return the id value of the "id" parameter in the URL.
-        const productId = urlParams.get('id');
+        const productId = urlParams.get("id");
 
         //find the product with the matching id from the products data.
-        const selectedProduct = products.data.find((product) => product.id == productId);
-        
+        const selectedProduct = products.data.find(
+          (product) => product.id == productId
+        );
+
         //check if a product with the given id was found or not
-        if(selectedProduct){
-           //display the product details on the page
-           displayProductDetails(selectedProduct);
-        }
-        else{
-            //displaying message if the product with the given id not found
-            document.getElementById("productDetails").innerHTML="Product Not Found";
+        if (selectedProduct) {
+          //display the product details on the page
+          displayProductDetails(selectedProduct);
+        } else {
+          //displaying message if the product with the given id not found
+          document.getElementById("productDetails").innerHTML =
+            "Product Not Found";
         }
       });
 
       //function to display food details
-      function displayProductDetails(product){
-        const productDetailsContainer = document.getElementById("productDetails");
-        
+      function displayProductDetails(product) {
+        const productDetailsContainer =
+          document.getElementById("productDetails");
+
         //creating html elements to display product details.
         const productName = document.createElement("h2");
         productName.innerText = product.foodName.toUpperCase();
-        
+
         const price = document.createElement("h3");
         price.innerText = "$" + product.price;
 
         const image = document.createElement("img");
-        image.setAttribute('src',product.image);
+        image.setAttribute("src", product.image);
 
         const description = document.createElement("p");
         description.innerText = product.description;
 
-
+        //append elements to the  productDetails id container
+        productDetailsContainer.appendChild(productName);
+        productDetailsContainer.appendChild(price);
+        productDetailsContainer.appendChild(image);
+        productDetailsContainer.appendChild(description);
       }
     </script>
     <script src="index.js"></script>
