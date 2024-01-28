@@ -60,10 +60,14 @@ img {
 }
 .container{
     padding-top:1em;
-    color:#110f29;
+    color:blueviolet;
+    
 }
 .container h5{
     font-weight: 500; 
+}
+.hide{
+    display: none;
 }
 @media screen and (max-width: 720px){
       img{
