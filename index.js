@@ -104,6 +104,7 @@ for (let i of products.data){
     let card = document.createElement("div");
     //card should have category and should stay hidden initially
     card.classList.add("card",i.category,"hide");
+    card.setAttribute("id",i.id);
     //image div
     let imgContainer = document.createElement("div");
     imgContainer.classList.add("image-container");
@@ -129,7 +130,7 @@ for (let i of products.data){
     foodDiscription.innerText = i.discription;
     container.appendChild(foodDiscription);
 
-    card.appendChild(container);
+    
     document.getElementById("products").appendChild(card);
 }
 //parameter passed from button (parameter same as catagory)
