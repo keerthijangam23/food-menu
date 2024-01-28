@@ -147,7 +147,12 @@ function filterProduct(value){
     //loop through all cards
     elements.forEach((element) => {
         //display all cards on "all" buton click
-        
+        if(value == "All"){
+            element.classList.remove("hide");
+        }
+        else{
+            //checks if element contain category class
+        }
 
     });
 }
