@@ -121,11 +121,11 @@ for (let i of products.data){
     name.innerText = i.foodName.toUpperCase();
     container.appendChild(name);
     //price
-    let price = document.createElement("h4");
+    let price = document.createElement("h3");
     price.innerText = "$" + i.price;
     container.appendChild(price);
     //discription
-    let foodDiscription = document.createElement("h6")
+    let foodDiscription = document.createElement("h5")
     foodDiscription.innerText = i.discription;
     container.appendChild(foodDiscription);
 
@@ -150,7 +150,7 @@ function filterProduct(value){
     let elements = document.querySelectorAll(".card");
     //loop through all cards
     elements.forEach((element) => {
-        //display all cards on "all" buton click
+        //display all cards on "all" button click
         if(value == "All"){
             element.classList.remove("hide");
         }

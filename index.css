@@ -28,10 +28,9 @@ body{
 h1{
     background-color: black;
     text-align: center;
-    align-items: center;
     color:red;
     text-decoration:underline;
-    border-radius: 50%;
+    border-radius: 100%;
     display:inline-flex;
     border: 2px solid #6759ff;
     padding:0.5em 1em;   
@@ -39,12 +38,11 @@ h1{
 #products{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 1.5em;
-    padding: 2em 0;
+    padding: 1rem 0;
 }
 .card {
     background-color: #ffffff;
-    max-width: 18em;
+    max-width: 20em;
     margin-top: 1em;
     padding: 1em;
     border-radius: 5px;
@@ -60,21 +58,24 @@ img {
 }
 .container{
     padding-top:1em;
-    color:blueviolet;
+    
     
 }
 .container h2{
     font-weight: 500; 
     text-decoration: underline;
     color: black;
+    word-wrap: break-word;
 }
-.container h4{
+.container h3{
     font-weight: 500;
     font-size: large;
     color:red; 
 }
-.container h6{
+.container h5{
     font-weight: 500; 
+    font-family:'Times New Roman', Times, serif;
+    color:blueviolet;
 }
 .hide{
     display: none;
