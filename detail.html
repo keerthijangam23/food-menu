@@ -36,6 +36,15 @@
       //function to display food details
       function displayProductDetails(product){
         const productDetailsContainer = document.getElementById("productDetails");
+        
+        //creating html elements to display product details.
+        const productName = document.createElement("h2");
+        productName.innerText = product.foodName.toUpperCase();
+        
+        const price = document.createElement("h3");
+        price.innerText = "$" + product.price;
+
+
       }
     </script>
     <script src="index.js"></script>
