@@ -63,6 +63,20 @@ img {
     color:#110f29;
 }
 .container h5{
-    font-weight: 500;
-    
+    font-weight: 500; 
+}
+@media screen and (max-width: 720px){
+      img{
+        max-width:100%;
+        object-fit:contain;
+        height: 10em;
+      }
+      .card{
+        max-width:10em;
+        margin-top:1em;
+      }
+      #products{
+        grid-template-columns: auto auto;
+        grid-column-gap: 1em;
+      }
 }
