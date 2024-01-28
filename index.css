@@ -19,8 +19,7 @@ body{
     border-radius:3rem;
     background-color: transparent;
     color:#6759ff;
-    cursor: pointer;
-   
+    cursor: pointer;  
 }
 .active{
     background-color:#6759ff;
@@ -31,6 +30,7 @@ h1{
     text-align: center;
     align-items: center;
     color:red;
+    text-decoration:underline;
     border-radius: 50%;
     display:inline-flex;
     border: 2px solid #6759ff;
@@ -63,7 +63,17 @@ img {
     color:blueviolet;
     
 }
-.container h5{
+.container h2{
+    font-weight: 500; 
+    text-decoration: underline;
+    color: black;
+}
+.container h4{
+    font-weight: 500;
+    font-size: large;
+    color:red; 
+}
+.container h6{
     font-weight: 500; 
 }
 .hide{

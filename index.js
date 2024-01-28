@@ -116,14 +116,18 @@ for (let i of products.data){
     let container = document.createElement("div");
     container.classList.add("container");
     //product name
-    let name = document.createElement("h5");
+    let name = document.createElement("h2");
     name.classList.add("product-name");
     name.innerText = i.foodName.toUpperCase();
     container.appendChild(name);
     //price
-    let price = document.createElement("h6");
+    let price = document.createElement("h4");
     price.innerText = "$" + i.price;
     container.appendChild(price);
+    //discription
+    let foodDiscription = document.createElement("h6")
+    foodDiscription.innerText = i.discription;
+    container.appendChild(foodDiscription);
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
