@@ -99,3 +99,15 @@ let products = {
     ],
 };
 
+for (let i of products.data){
+    //create Card
+    let card = document.createElement("div");
+    //crad should have category
+    card.classList.add("card",i.category)
+    //image div
+    let imgContainer = document.createElement("div");
+    imgContainer.classList.add("image-container");
+    //imag tag
+    let image = document.createElement("img");
+    image.setAttribute("src",i.image);
+}
