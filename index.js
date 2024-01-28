@@ -132,7 +132,7 @@ for (let i of products.data){
 
     card.appendChild(container);
     card.addEventListener("click",()=>{
-        //get the id attribute value of the clicked crad
+        //get the id attribute value of the clicked card
         let foodId = card.getAttribute("id");
         //navigate to the detail.html page with product id
         window.location.href = "detail.html?id=" + foodId;
