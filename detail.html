@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
-    <link rel = "stylesheet" href = "index.css"/>
-</head>
-<body>
-    <div id ="productDetails">
-    </div>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="productDetails"></div>
     <script>
-        //code excuted when the dom content fully loaded
-        document.addEventListener("DOMContentLoaded",function(){
+      //code excuted when the dom content fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        //to get the product id from the URL paramters
+        //window.location - It's an object that contains information about the current URL,including details like the protocol(http or https),host,port,search paramters.
+        //window.location.search-->specifically represents query string part of URL,The query string is the portion of the URL that follows the "?" character and includes key-value pairs separated by "&"
+        // URLSearchParams -->It takes the query string (in this case, window.location.search) as an argument and parses it, allowing us to easily manipulate and retrieve individual parameters.
+        const urlParams = new URLSearchParams(window.location.search);
+        //will return the id value of the "id" parameter in the URL.
+        const productId = urlParams.get('id');
 
 
-        });
-
-
+        
+      });
     </script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
