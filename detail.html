@@ -24,12 +24,13 @@
         
         //check if a product with the given id was found or not
         if(selectedProduct){
-           
+           //display the product details on the page
+           displayProductDetails(selectedProduct);
         }
-        
-
-
-
+        else{
+            //displaying message if the product with the given id not found
+            document.getElementById("productDetails").innerHTML="Product Not Found";
+        }
       });
     </script>
     <script src="index.js"></script>
