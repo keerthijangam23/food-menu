@@ -30,21 +30,21 @@ let products = {
         },
         {
             foodName:"Chapathi-rolls",
-            category:"lunch",
+            category:"Lunch",
             price:"150",
             image:"images/chapathi-rolls-lunch.jpg",
             discription:"this simple veg roll recipe is an all-time favorite for kids.There is no potato or paneer used here and is made with simple veggies like cabbage,carrots and capsicum.The fillimg is made by sauteing the veggies in a chinese style on a high flame which lends that nice unique aroma."
         },
         {
             foodName:"Pappu-rice",
-            category:"lunch",
+            category:"Lunch",
             price:"50",
             image:"images/pappu-rice-lunch.jpg",
             discription:" Almost in homes across South India, sambar is cooked at least once a week either as an accompaniment for breakfast staples like idli/dosa or as a main dish with rice. While that might be the most popular version of dal with a more intensive cooking process, there are numerous simple dals that are also cooked regularly. Nowhere more than Andhra where ingredients like spinach and tomato are combined cleverly with dal."
         },
         {
             foodName:"Pasta",
-            category:"lunch",
+            category:"Lunch",
             price:"150",
             image:"images/pasta-lunch.jpg",
             discription:"Pasta, any of several starchy food preparations frequently associated with Italian cuisine and made from semolina, the granular product obtained from the endosperm of a type of wheat called durum, and containing a large proportion of gluten. Pasta is formed into ribbons, cords, tubes, and various special shapes"
@@ -52,14 +52,14 @@ let products = {
         },
         {
             foodName:"Rice-vegsalad",
-            category:"lunch",
+            category:"Lunch",
             price:"200",
             image:"images/rice-vegsalad-lunch.jpg",
             discription:" Rice salad is a delicious dish with rice, fresh veggies, and a delightful dressing. It is easy to prepare, excellent for meal prep, and one of the best recipes for picnics and potlucks, This recipe is inspired by Italian rice salad; it’s a fulfilling meal that is nutritious, light, crunchy, colorful, and refreshing."      
         },
         {
             foodName:"berry-vanila-sensation",
-            category:"shakes",
+            category:"Shakes",
             price:"150",
             image:"images/berry-vanilla-sensation.webp",
             discription:"Healthy fruits like raspberries, strawberries and pineapple make berry vanilla sensation smoothie a delightful and revitalizing cool drink."
@@ -67,7 +67,7 @@ let products = {
         },
         {
             foodName:"chocolate-chip-cookie",
-            category:"shakes",
+            category:"Shakes",
             price:"150",
             image:"images/chocolate-chip-cookie-and-vanilla-ice-cream-shake.webp",
             discription:"Regular commercial chocolate is high in sugar and saturated fat content, depending on the kind you eat.In the recipes you'll find below, I avoid unhealthy ingredients as much as possible, while keeping the taste ultra-yummy!"   
@@ -75,7 +75,7 @@ let products = {
         },
         {
             foodName:"classic-vanilla-milkshake",
-            category:"shakes",
+            category:"Shakes",
             price:"150",
             image:"images/classic-vanilla-milkshake.webp",
             discription:"Black tea, blueberries, and almonds make for a sophisticated smoothie. Using tea as the base liquid adds a subtle fragrance, while almond milk, yogurt, and bananas provide creaminess."   
@@ -83,7 +83,7 @@ let products = {
         },
         {
             foodName:"papaya-milkshake",
-            category:"shakes",
+            category:"Shakes",
             price:"150",
             image:"images/papaya-milkshake.webp",
             discription:"Smooth and silky papaya shake prepared with this recipe is a perfect blend of ripe papaya, cold milk and honey. The suggested black pepper powder seasoning gives an extra aromatic punch and compliments the sweet smell of papaya. Having papaya milkshake in breakfast is a best way to get entire daily requirement of vitamin A, C and E, and antioxidants in a single go at the start of the day itself."   
@@ -91,7 +91,7 @@ let products = {
         },
         {
             foodName:"super-healthy-greensmothie",
-            category:"shakes",
+            category:"Shakes",
             price:"150",
             image:"images/super-healthy-green-smoothie-recipe.webp",
             discription:"Green smoothies are nutrient-rich blends of fruits and vegetables. They’ve become a popular way for people to meet their recommended daily intake of vitamins and minerals. Unlike juices, green smoothies retain the beneficial fiber content from whole foods.."     
@@ -152,6 +152,14 @@ function filterProduct(value){
         }
         else{
             //checks if element contain category class
+            if(element.classList.contains(value)){
+                //display element based on catagory
+                element.classList.remove("hide");
+            }
+            else{
+                //hide other elements
+                element.classList.add("hide");
+            }
         }
 
     });
