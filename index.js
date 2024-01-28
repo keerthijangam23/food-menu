@@ -120,6 +120,11 @@ for (let i of products.data){
     name.classList.add("product-name");
     name.innerText = i.foodName.toUpperCase();
     container.appendChild(name);
+    //price
+    let price = document.createElement("h6");
+    price.innerText = i.price;
+    container.appendChild(price);
+
 
     card.appendChild(container);
     document.getElementById("products").appendChild(card);
