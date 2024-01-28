@@ -58,3 +58,11 @@ img {
     object-fit: contain;
     height:15rem;
 }
+.container{
+    padding-top:1em;
+    color:#110f29;
+}
+.container h5{
+    font-weight: 500;
+    
+}
