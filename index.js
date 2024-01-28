@@ -110,4 +110,9 @@ for (let i of products.data){
     //imag tag
     let image = document.createElement("img");
     image.setAttribute("src",i.image);
+    imgContainer.appendChild(image);
+    card.appendChild(imgContainer);
+    
+    document.getElementById("products").appendChild(card);
+
 }
