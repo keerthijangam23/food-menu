@@ -101,7 +101,7 @@ let products = {
 
 for (let i of products.data){
     //create Card
-    let card = document.createElement("div");
+    let card = document.createElement("a");
     //card should have category and should stay hidden initially
     card.classList.add("card",i.category,"hide");
     card.setAttribute("id",i.id);
@@ -130,7 +130,14 @@ for (let i of products.data){
     foodDiscription.innerText = i.discription;
     container.appendChild(foodDiscription);
 
-    
+    card.appendChild(container);
+    card.addEventListener("click",()=>{
+        //get the id attribute value of the clicked crad
+        let foodId = card.getAttribute("id");
+        //navigate to the detail.html page with product id
+        window.location.href = "detail.html?id=" + foodId;
+
+    })
     document.getElementById("products").appendChild(card);
 }
 //parameter passed from button (parameter same as catagory)
