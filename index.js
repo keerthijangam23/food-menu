@@ -102,7 +102,7 @@ let products = {
 for (let i of products.data){
     //create Card
     let card = document.createElement("div");
-    //crad should have category and should stay hidden initially
+    //card should have category and should stay hidden initially
     card.classList.add("card",i.category,"hide");
     //image div
     let imgContainer = document.createElement("div");
