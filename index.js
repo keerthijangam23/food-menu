@@ -2,6 +2,7 @@ let products = {
     data:[
         {
             foodName:"burger",
+            id:1,
             category:"Breakfast",
             price:"100",
             image:"images/vegburger-breakfast.jpg",
@@ -9,6 +10,7 @@ let products = {
         },
         {
             foodName:"Classic Eggs Benedict",
+            id:2,
             category:"Breakfast",
             price:"90",
             image:"images/eggbreakfast.jpg",
@@ -16,6 +18,7 @@ let products = {
         },
         {
             foodName:"Croque Madame",
+            id:3,
             category:"Breakfast",
             price:"150",
             image:"images/breadeggbreakfast.jpg",
@@ -23,6 +26,7 @@ let products = {
         },
         {
             foodName:"Pancake",
+            id:4,
             category:"Breakfast",
             price:"170",
             image:"images/eggbreakfast.jpg",
@@ -30,6 +34,7 @@ let products = {
         },
         {
             foodName:"Chapathi-rolls",
+            id:5,
             category:"Lunch",
             price:"150",
             image:"images/chapathi-rolls-lunch.jpg",
@@ -37,6 +42,7 @@ let products = {
         },
         {
             foodName:"Pappu-rice",
+            id:6,
             category:"Lunch",
             price:"50",
             image:"images/pappu-rice-lunch.jpg",
@@ -44,6 +50,7 @@ let products = {
         },
         {
             foodName:"Pasta",
+            id:7,
             category:"Lunch",
             price:"150",
             image:"images/pasta-lunch.jpg",
@@ -52,6 +59,7 @@ let products = {
         },
         {
             foodName:"Rice-vegsalad",
+            id:8,
             category:"Lunch",
             price:"200",
             image:"images/rice-vegsalad-lunch.jpg",
@@ -59,6 +67,7 @@ let products = {
         },
         {
             foodName:"berry-vanila-sensation",
+            id:9,
             category:"Shakes",
             price:"150",
             image:"images/berry-vanilla-sensation.webp",
@@ -67,6 +76,7 @@ let products = {
         },
         {
             foodName:"chocolate-chip-cookie",
+            id:10,
             category:"Shakes",
             price:"150",
             image:"images/chocolate-chip-cookie-and-vanilla-ice-cream-shake.webp",
@@ -75,6 +85,7 @@ let products = {
         },
         {
             foodName:"classic-vanilla-milkshake",
+            id:11,
             category:"Shakes",
             price:"150",
             image:"images/classic-vanilla-milkshake.webp",
@@ -83,6 +94,7 @@ let products = {
         },
         {
             foodName:"papaya-milkshake",
+            id:12,
             category:"Shakes",
             price:"150",
             image:"images/papaya-milkshake.webp",
@@ -91,6 +103,7 @@ let products = {
         },
         {
             foodName:"super-healthy-greensmothie",
+            id:13,
             category:"Shakes",
             price:"150",
             image:"images/super-healthy-green-smoothie-recipe.webp",
@@ -131,15 +144,17 @@ for (let i of products.data){
     container.appendChild(foodDiscription);
 
     card.appendChild(container);
+    console.log(card);
+    document.getElementById("products").appendChild(card);
     card.addEventListener("click",()=>{
         //get the id attribute value of the clicked card
         let foodId = card.getAttribute("id");
         //navigate to the detail.html page with product id
         window.location.href = "detail.html?id=" + foodId;
-
-    })
-    document.getElementById("products").appendChild(card);
+    });
 }
+  
+    
 //parameter passed from button (parameter same as catagory)
 function filterProduct(value){
     //Button class code
