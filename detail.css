@@ -1,0 +1,18 @@
+#productDetails {
+    border: 1px solid black;
+    width: 25%;
+    background-color: #ffffff;
+    text-align: center
+    
+}
+h2{
+    text-decoration: underline;
+}
+h3{
+    color: red;
+}
+img {
+    padding: auto;
+    max-width: auto;
+    max-height: auto;
+}

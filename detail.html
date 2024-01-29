@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Product Details</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel ="stylesheet" href = "detail.css"/>
   </head>
   <body>
     <div id="productDetails"></div>
@@ -39,24 +40,26 @@
       function displayProductDetails(product) {
         const productDetailsContainer =
           document.getElementById("productDetails");
+         
 
         //creating html elements to display product details.
         const productName = document.createElement("h2");
         productName.innerText = product.foodName.toUpperCase();
-
+       
         const price = document.createElement("h3");
         price.innerText = "$" + product.price;
-
+        
         const image = document.createElement("img");
         image.setAttribute("src", product.image);
-
+        
         const description = document.createElement("p");
         description.innerText = product.discription;
-
+       
+        
         //append elements to the  productDetails id container
+        productDetailsContainer.appendChild(image);
         productDetailsContainer.appendChild(productName);
         productDetailsContainer.appendChild(price);
-        productDetailsContainer.appendChild(image);
         productDetailsContainer.appendChild(description);
       }
     </script>
