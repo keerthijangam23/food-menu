@@ -19,7 +19,7 @@ body{
     border-radius:3rem;
     background-color: transparent;
     color:#6759ff;
-    cursor: pointer;  
+    cursor: pointer;
 }
 .active{
     background-color:#6759ff;
@@ -37,8 +37,9 @@ h1{
 }
 #products{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto  auto auto;
     padding: 1rem 0;
+    margin-left: 10px;
 }
 .card {
     background-color: #ffffff;
@@ -60,8 +61,6 @@ img {
 .card:hover{
     transform: scale(0.9);
     cursor: pointer;
-
-
 }
 .container{
     padding-top:1em;
@@ -98,7 +97,7 @@ img {
         margin-top:1em;
       }
       #products{
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
         grid-column-gap: 1em;
       }
 }
