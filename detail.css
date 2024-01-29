@@ -1,18 +1,24 @@
 #productDetails {
-    border: 1px solid black;
-    width: 25%;
-    background-color: #ffffff;
-    text-align: center
-    
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+  margin: auto;
+  width: 50%;
+  border: 4px solid black;
+  padding: 10px;
 }
-h2{
-    text-decoration: underline;
+h2 {
+  text-decoration: underline;
 }
-h3{
-    color: red;
+h3 {
+  color: red;
+  font-weight: bold;
 }
 img {
-    padding: auto;
-    max-width: auto;
-    max-height: auto;
+  padding: auto;
+  max-width: auto;
+  max-height: auto;
+}
+p {
+  color: blueviolet;
 }
